@@ -443,7 +443,11 @@ Existing repositories can be updated manually:
 Recommended in this case is `cmake-vs2019-64bit-windows10.bat`
 
 4. Use the VS2019 solution to compile what you need:
-	RBDOOM-3-BFG/build/RBDoom3BFG.sln
+    RBDOOM-3-BFG/build/RBDoom3BFG.sln
+
+Or if you are using CLion, use the following settings when importing the project:
+
+`-G "Visual Studio 16" -A x64 -DWINDOWS10=ON -DUSE_OPENAL=ON -DFFMPEG=OFF -DBINKDEC=ON`
 	
 
 ## Optional if you want to use FFmpeg
